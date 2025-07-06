@@ -1,0 +1,17 @@
+{
+  "name": "death-xmd-downloader",
+  "version": "1.0.0",
+  "description": "YouTube video downloader",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.7"
+  },
+  "engines": {
+    "node": ">=16.x"
+  }
+}
