@@ -14,7 +14,7 @@
 
     <div class="container">
         <div class="input-group">
-            <input type="text" id="youtube-url" placeholder="Paste YouTube URL here...">
+            <input type="text" id="youtube-url" placeholder="Paste YouTube URL here..." autocomplete="off">
             <button id="fetch-btn">FETCH</button>
         </div>
 
@@ -22,7 +22,7 @@
 
         <div class="loading" id="loading">
             <div class="spinner"></div>
-            <p>Fetching video data...</p>
+            <p id="loading-text">Fetching video data...</p>
         </div>
 
         <div class="result-container" id="result-container">
@@ -30,7 +30,9 @@
                 <img id="thumbnail" class="thumbnail" src="" alt="Video thumbnail">
                 <div class="video-info">
                     <h2 class="video-title" id="video-title"></h2>
-                    <a href="#" class="download-btn" id="download-btn">⬇ DOWNLOAD MP4</a>
+                    <div class="video-details" id="video-details"></div>
+                    <button class="download-btn" id="download-btn">⬇ DOWNLOAD MP4</button>
+                    <div class="download-status" id="download-status"></div>
                 </div>
             </div>
         </div>
@@ -45,6 +47,6 @@
         </div>
     </footer>
 
-    <script src="/index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
